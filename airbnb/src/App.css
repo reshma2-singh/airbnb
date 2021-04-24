@@ -1,0 +1,254 @@
+*{
+  margin: 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  width: 100%;
+}
+.header__icon {
+  display: flex;
+  object-fit: contain;
+  height: 100px;
+  margin-left: 20px;
+}
+
+
+
+.header__center {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  max-width: fit-content;
+  padding: 10px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 999px;
+  
+}
+
+.header__center > input {
+  border: none;
+  padding: 10px;
+  outline-width: 0;
+   width: 250px; 
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15vw;
+  margin-right: 80px;
+}
+.banner{
+  background-image: url("https://media.cntraveler.com/photos/5db1d0dd11c1e500092e7133/master/pass/airbnb-ski-aspen-28328347.jpg")    ;
+  height: 50%;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+  position: relative;
+
+  
+}
+.banner__info {
+  background-color: black;
+    color: white;
+    padding-top: 25vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    width: 300px;
+}
+.banner__info > Button{
+  background-color: #ff7779;
+  color: white;
+  margin-top: 20px;
+  font-weight: 600;
+  text-transform: inherit;
+}
+.banner__info > h5{
+  margin-top: 10px;
+}
+.banner__info > Button:hover{
+  background-color: white;
+  color: #ff7779;
+}
+.banner__searchButton{
+  background-color: white !important;
+  color: #ff7779 !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+}
+.banner__search{
+  display: flex ;
+  flex-direction: column;
+}
+.search{
+  position: absolute;
+  top: 35px;
+  left: 25%;
+  width: 100vw;
+}
+.search > h2{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 559px;
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 350px;
+    color: brown;
+
+}
+.search >input{
+  width: 539px;
+    padding: 20px;
+    position: absolute;
+    height: 30px;
+    left: 0;
+    top: 400px;
+    border: none;
+    background-color: aquamarine;
+    font-weight: 500;
+}
+.search > input:focus {
+  outline-width: 0;
+}
+.search > button{
+  position: absolute;
+  left: 0;
+  top: 460px;
+  text-transform: inherit !important;
+  background-color: #ff7779;
+  color: white;
+  width: 579px;
+}
+.search > button:hover{
+  background-color: white;
+  color: #ff7779;
+}
+.home__section{
+  display: flex;
+}
+.card{
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
+  transition: transform 100ms ease-in;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.07);
+}
+.card > img {
+  object-fit: fill;
+  min-width: 300px;
+  min-height: 200px;
+  width: 100%;
+}
+.card__info {
+  margin-top: -9px;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 20px;
+  border: 1;
+}
+
+.card__info > h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card__info > h4 {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.searchPage__info{
+  padding: 10px;
+}
+.searchPage__info > p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.searchPage__info > button{
+  margin: 5px;
+  border-radius: 10px;
+  text-transform: inherit;
+}
+.searchPage__info > h1{
+  margin-bottom: 30px;
+}
+.searchResult {
+  display: flex;
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.searchResult:hover {
+  opacity: 0.8;
+}
+.searchResult > img{
+  height: 200px;
+  width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.searchResult__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+.searchResult__heart {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+.searchResult__infoTop {
+  width: 40%;
+}
+.searchResult__infoTop > h3 {
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.searchResult__infoTop > p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: gray;
+}
+
+.searchResult__infoBottom {
+  display: flex;
+  justify-content: space-between;
+}
+.searchResults__price > p {
+  text-align: right;
+}
+
+.searchResults__price {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+
+.searchResult__star {
+  color: red;
+}
